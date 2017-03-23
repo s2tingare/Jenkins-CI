@@ -3,7 +3,9 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                bat 'set'
+                timeout(time: 3, units: 'MINUTES') {
+                    retry(3) {
+                        bat 'set'
             }
         }
     }
