@@ -6,6 +6,8 @@ pipeline {
                 timeout(time: 3, units: 'MINUTES') {
                     retry(3) {
                         bat 'set'
+                    }
+                }
             }
         }
     }
