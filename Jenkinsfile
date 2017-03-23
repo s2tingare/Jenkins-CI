@@ -11,12 +11,12 @@ pipeline {
             }
         }
     }
-}
-post {
-    success {
-        echo "Project build was successful."
-    }
-    failure {
-        echo "Project build failed."
+    post {
+        success {
+            echo "Project build was successful."
+        }
+        failure {
+            echo "Project build failed."
+        }
     }
 }
