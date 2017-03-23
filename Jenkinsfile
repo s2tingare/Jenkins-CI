@@ -1,9 +1,9 @@
 pipeline {
-    agent { docker 'python:2.7.10' }
+    agent any
     stages {
         stage('build') {
             steps {
-                echo "building"
+                bat 'set'
             }
         }
     }
