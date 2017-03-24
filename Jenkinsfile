@@ -18,5 +18,9 @@ pipeline {
         failure {
             echo "Project build failed."
         }
+        always {
+            echo "Call script to store build artifacts here"
+            echo "Call script to generate test report here"
+        }
     }
 }
